@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to application_name, main_app.root_path, id: 'home-link', class: 'navbar-brand' %>
+        </div>
+        <div class="col-md-6 navbar-header">
+          <%= render 'shared/site_search' if show_site_search? %>
+
+        </div>
+        <div class="col-md-3">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+
+            <%= render 'shared/site_actions' if show_site_actions? %>
+          </ul>
+        </div><!--/.nav-collapse -->
+        </div>
+    </div>
+  </div><!--/.container-fluid -->
+</nav>
