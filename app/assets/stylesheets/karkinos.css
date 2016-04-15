@@ -6,3 +6,32 @@
 .search-input {
     width: 100%;
 }
+
+#main .navbar-default {
+    padding: 5px;
+    height: 10px;
+}
+
+#main .navbar-default .container-fluid {
+    margin-top: -6px;
+    height: 24px
+}
+
+.navbar {
+    min-height: 40px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-header {
+    margin-top: 0px;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
